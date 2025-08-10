@@ -2,7 +2,7 @@
   --bg: #ffffff;
   --ink: #0f172a;
   --muted: #475569;
-  --accent: #2b6cb0;
+  --accent: #2563eb;
   --card: #f8fafc;
   --border: #e2e8f0;
 }
@@ -15,14 +15,17 @@ a:hover { text-decoration: underline; }
 
 .container { max-width: 1000px; margin: 0 auto; padding: 1rem; }
 
+/* Header */
 .site-header { position: sticky; top: 0; background: rgba(255,255,255,.9); backdrop-filter: blur(6px); border-bottom: 1px solid var(--border); }
-.brand { font-weight: 700; letter-spacing: .2px; margin-right: 1rem; }
-.nav a { margin: 0 .5rem; font-weight: 500; }
-.nav { float: right; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; }
+.brand { font-weight: 700; letter-spacing: .2px; }
+.nav a { margin-left: .75rem; font-weight: 500; }
 @media (max-width: 720px) {
-  .nav { float: none; display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .5rem; }
+  .nav { display: flex; flex-wrap: wrap; gap: .5rem; }
+  .nav a { margin-left: 0; }
 }
 
+/* Main */
 .hero { padding: 3rem 0 2rem; }
 .hero h1 { font-size: clamp(28px, 4vw, 44px); line-height: 1.1; margin: 0 0 .5rem; }
 .lead { color: var(--muted); font-size: 1.125rem; max-width: 65ch; }
@@ -44,6 +47,7 @@ a:hover { text-decoration: underline; }
 blockquote { border-left: 4px solid var(--accent); padding: .5rem 1rem; background: #f1f5f9; border-radius: .25rem; }
 blockquote cite { display: block; color: var(--muted); margin-top: .25rem; font-style: normal; }
 
+/* Footer */
 .site-footer { margin-top: 3rem; border-top: 1px solid var(--border); background: #f9fafb; }
 .footer-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; padding: 1.25rem 0; }
 .socials a { display: inline-block; margin-right: .75rem; }
