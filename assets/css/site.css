@@ -104,3 +104,20 @@ blockquote cite { display: block; color: var(--muted); margin-top: .25rem; font-
     top: calc(100% + .5rem);
     background: #fff;
     border: 1px solid var(--border);
+
+@media (max-width: 768px) {
+  .site-footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    font-size: 1rem; /* matches body text size */
+  }
+
+  .site-footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; /* space between stacked items */
+  }
+}
+    
