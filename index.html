@@ -33,19 +33,28 @@
 <body>
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="index.html">
-  <img src="assets/img/wheelhouse-wordmark.svg" alt="Wheelhouse Editorial" style="height:70px;">
-</a>
-    <nav class="nav">
-      <a href="index.html">Home</a>
+    <a class="brand" href="/">
+      <img src="assets/img/wheelhouse-wordmark-6spoke.svg" alt="Wheelhouse Editorial" style="height:70px; vertical-align:middle;">
+    </a>
+
+    <!-- New: hamburger button -->
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">
+      <!-- ☰ as text for simplicity; you can swap for an SVG icon later -->
+      ☰
+    </button>
+
+    <nav class="nav" id="siteNav">
+      <a href="/">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="clients.html">Clients</a>
+      <a href="insights.html">Insights</a>
       <a href="testimonials.html">Testimonials</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
+
 
 <main class="content container">
   <section class="hero">
